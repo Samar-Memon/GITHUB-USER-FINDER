@@ -1,0 +1,212 @@
+/* get font browse */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+.box{
+    max-width: 768px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: 3px 5px 20px #111;
+    background-color: #0c1117;
+}
+.top{
+    border-bottom: 2px dashed;
+    margin-bottom: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc;
+}
+.top i{
+    font-size: 40px;
+}
+.top img{
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.inputBar{
+    margin-bottom: 10px;
+    height: 50px;
+    display: flex;
+}
+.inputBar input{
+    width: 80%;
+    height: 100%;
+    padding: 0px 10px;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+::placeholder{
+    color: #ccc;
+
+}
+.inputBar button{
+    width: 20%;
+    height: 100%;
+    color: #0c1117;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+.bottom{
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgDiv{
+    align-self: flex-start;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ccc;
+}
+.bottom img{
+    border: 2px solid #ccc;
+    padding: 2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ccc;
+    font-size: 20px;
+}
+.details button{
+    font-weight: 500;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: #ccc;
+}
+
+
+
+
+.swal2-confirm{
+    background-color: #0c1117;
+}
+
+.displayFollowers{
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0c1117;
+    box-shadow: 3px 4px 20px #fff;
+}
+.rows{
+    overflow: auto;
+    height: 500px;
+}
+.displayFollowers i{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+    top: 10px;
+}
+.row{
+    border: 2px solid white;
+    padding: 2px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc;
+    margin-block: 10px;
+    width: 100%;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    font-size: 20px;
+    width: 60%;
+    overflow: auto;
+}
+.right img{
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.left{
+    height: 100%;
+}
+.left button{
+    width: 130px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+}
+.left button:hover{
+    background-color: transparent;
+    color: #ccc;
+    border-left: 2px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .box{
+        height: 100vh;
+        border-radius: 0;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .imgDiv{
+        width: 100%;
+        border-bottom: 1px dashed #ccc;
+        margin-bottom: 10px;
+    }
+    .top i{
+        font-size: 30px;
+    }
+    .top h1{
+        font-size: 26px;
+    }
+}
